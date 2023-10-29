@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testLayer.LoginTest">
+      <class name="testLayer.ForgetPasswordTest">
         <methods>
-          <include name="validateInvalidusernameandInvalidpasswordTest"/>
-          <include name="validateInvalidusernameandvalidpasswordTest"/>
           <include name="setup"/>
-          <include name="validatevalidusernameandInvalidpasswordTest"/>
+          <include name="tearDown"/>
+          <include name="invalidmailidvalidateforgetPassword"/>
         </methods>
-      </class> <!-- testLayer.LoginTest -->
+      </class> <!-- testLayer.ForgetPasswordTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

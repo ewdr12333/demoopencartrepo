@@ -44,9 +44,9 @@ public class TestBaseClasses {
 		
 	}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void tearDown()
 	{
 		driver.quit();
-	} */
+	} 
 }

@@ -20,6 +20,9 @@ public class LoginPage {
 		@FindBy(xpath="//input[@type='submit']")
 		private WebElement login_btn;
 		
+		@FindBy(xpath="//a[text()='Forgotten Password']")
+		private WebElement forgetpass_link;
+		
 		public void enterusername_txt(String username)
 		{
 			username_txtbox.sendKeys(username);
@@ -36,7 +39,10 @@ public class LoginPage {
 			login_btn.click();
 		}
 		
-		
+		public void clickforgetpassLink()
+		{
+			forgetpass_link.click();
+		}
 	
 
 
